@@ -7,7 +7,7 @@ Subtasker was designed as a practical product prototype: a task management backe
 
 ## Demo
 
-![Main view](assets/screenshot_1.png)
+![Main view](assets/Screenshot_1.png)
 
 ## Features
 - Create, read, update, and delete tasks
