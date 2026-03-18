@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subtasker - Task Manager</title>
+  <style>
+    body {
+      display: flex;
+      font-family: sans-serif;
+      margin: 0;
+    }
+
+    #sidebar {
+      width: 35%;
+      background: #f4f4f4;
+      border-right: 1px solid #ccc;
+      padding: 20px;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    #details {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .task-item {
+      background: #e0ecff;
+      padding: 6px 10px;
+      margin-bottom: 4px;
+      border-left: 4px solid #007acc;
+      border-radius: 4px;
+      font-size: 0.95em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .task-item:hover {
+      background-color: #dce9ff;
+    }
+
+    .toggle-btn {
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .task-title {
+      flex: 1;
+      cursor: pointer;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    input, textarea, select, button {
+      width: 100%;
+      margin: 5px 0;
+      padding: 8px;
+      font-size: 1em;
+      box-sizing: border-box;
+    }
+
+    .subtask-container {
+      margin-left: 20px;
+      border-left: 2px dashed #ccc;
+      padding-left: 10px;
+    }
+
+    #new-root-task-btn {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 1em;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #new-root-task-btn:hover {
+      background-color: #005ea6;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="sidebar">
+    <h2>📋 All tasks</h2>
+    <button id="new-root-task-btn">➕ New task</button>
+    <div id="task-container"></div>
+  </div>
+
+  <div id="details">
+    <h2>Task details</h2>
+    <div id="task-details">
+      <p>🛈 Click a task to view or edit its details</p>
+    </div>
+  </div>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>
+
+
