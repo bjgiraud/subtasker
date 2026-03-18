@@ -6,12 +6,8 @@ Hierarchical task management API with **recursive subtasks**, a lightweight fron
 Subtasker was designed as a practical product prototype: a task management backend with recursive data structures, CRUD routes, and an AI feature that turns one complex task into a short list of actionable subtasks.
 
 ## Demo
-Add 1 to 3 screenshots in `assets/` and replace this section with something like:
 
-```md
-![Main view](assets/subtasker-main.png)
-![Kanban view](assets/subtasker-kanban.png)
-```
+![Main view](assets/screenshot_1.png)
 
 ## Features
 - Create, read, update, and delete tasks
